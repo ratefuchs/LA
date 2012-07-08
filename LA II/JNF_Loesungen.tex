@@ -1,0 +1,38 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\section*{Aufgabe 1}
+Hier f\"r Aufgabe 1 nur die Zwischenergebnisse:\\
+$p(x) = -x(1-x)(3-x)$. Tipp zur Rechnung: Entwickeln!\\
+Über $\mathbb{R}$: $E_1=[(1,0,0)^T], E_0=[(3,-2,1)^T], E_3=[(3,2,2)^T] \Rightarrow
+\tilde A = \begin{pmatrix}0&0&0\\0&1&0\\0&0&3\end{pmatrix}, S = \begin{pmatrix}3&1&3\\-2&0&2\\1&0&2\end{pmatrix}$.\\
+Über $F_2$: $p(x) = x(1+x)^2$. $E_1=[(1,0,0)^T], H_1=[(1,0,0)^T,(0,1,1)^T], E_0=[(1,0,1)^T]$. Es ist $(A-I)\begin{pmatrix}0\\1\\1\end{pmatrix}=\begin{pmatrix}1\\0\\0\end{pmatrix} \Rightarrow
+\tilde A = \begin{pmatrix}0&0&0\\0&1&0\\0&1&1\end{pmatrix}, S = \begin{pmatrix}1&0&1\\0&1&0\\1&1&0\end{pmatrix}$.\\
+Über $F_3$: $p(x) = x^2(1-x)$. $E_1=[(1,0,0)^T], E_0=[(0,1,1)^T], H_1=[(1,0,2)^T,(0,1,1)^T]$. Es ist
+$A\begin{pmatrix}1\\0\\2\end{pmatrix}=\begin{pmatrix}0\\0\\1\end{pmatrix} \Rightarrow
+\tilde A = \begin{pmatrix}0&0&0\\1&0&0\\0&0&1\end{pmatrix}, S = \begin{pmatrix}1&0&1\\0&1&0\\2&1&0\end{pmatrix}$.  
+
+\section*{Aufgabe 2}
+
+(a)	Determinante einer Dreiecksmatrix = Produkt der Diagonaleinträge.
+Da auf der Diagonale Linearfaktoren $(a_{kk}-X)$ stehen, zerfällt p(x) in LinFakt $\Rightarrow \tilde A$ existiert.\\
+(b)	Diagonalmatrizen können es nach (a) nicht sein. Also $a_{21}=a_{12}=1$.
+Durchprobieren der vier Kombinationen für $a_{11}$ und $a_{22}$ liefert:
+Nur $\begin{pmatrix}0&1\\1&1\end{pmatrix}$ und $\begin{pmatrix}1&1\\1&0\end{pmatrix}$ haben keine JNF.\\
+(c)	Hier für die erste Matrix aus (b): $p(x) = x^2-x-1$. $F_3: p(0)=2, p(1)=2, p(2)=1 \Rightarrow$ keine JNF.\\
+$F_5$: Probieren liefert $p(3)=0$; Polynomdivision $\Rightarrow p(x)=(x-3)^2$.
+Der Kern von (A-3I) ist eindimensional $\Rightarrow$ 1 Kästchen, Länge 2
+$\Rightarrow \tilde A = \begin{pmatrix}3&0\\1&3\end{pmatrix}$.\\
+(d)	Erster Fall: Wähle trivialerweise $\mathbb{C}$.
+Mitternachtsformel liefert $x_{1,2}=\frac{1}{2}\pm\frac{\sqrt{5}}{2}$.
+Kerne trivialerweise eindimensional $\Rightarrow \tilde A = \begin{pmatrix}\frac{1}{2}+\frac{\sqrt{5}}{2}&0\\0&\frac{1}{2}-\frac{\sqrt{5}}{2}\end{pmatrix}$.
+(Klappt auch mit $\mathbb{R}$)\\
+Zweiter Fall: genau hinschauen! Mit $\mathbb{Q}$ selbe Nullstellen, aber $x_{1,2}\notin \mathbb{Q}
+\Rightarrow$ keine Linearfaktorzerlegung $\Rightarrow$ keine JNF.
+
+\end{document}

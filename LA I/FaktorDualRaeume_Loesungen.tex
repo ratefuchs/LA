@@ -1,0 +1,21 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\section*{Aufgabe 1}
+(a)	Individuelle Antwort, am einfachsten ist jedoch $B:=(x_1,x_2,x_3,\dots)$ mit $x_1=(0,1,0,0,\dots)+U, x_2 = (0,0,1,0,0,0,\dots)+U, x_3 = (0,0,0,1,0,\dots)+U, x_n = X^n+U,\dots$\\
+(b)	$f\colon ^{K[X]}/_U\rightarrow K[X], f((a_0,a_1,a_2,a_3,\dots)+U) = (a_1,a_2,a_3,...)$.\\ Beachte: Vertreter einer Äquivalenzklasse unterscheiden sich nur in $a_0$. Der Funktionswert hängt aber NICHT von $a_0$ ab $\Rightarrow$ Wohldefiniertheit.\\ Zeige noch, dass f Isomorphismus ist.\\
+(c)	Antwort abhängig von der Antwort zu (a), hier: Sei $v=(a_0,a_1,a_2,\dots)+U$. Dann ist $g_n(v)=a_n$. Wohldefiniert, da keine der Funktionen von $a_0$ abhängt.\\
+(d)	Antwort abhängig von der Antwort zu (a) und (c), hier: $g_1(v) = 5, g_2(v) = 3, g_3(v) = 6, g_4(v)= 7, g_n(v) = 0 (n\in\mathbb{N}, n\geq 5)$
+
+\section*{Aufgabe 2}
+Hier nur die Ans\"atze und L\"osungen:\\
+(a) Gaußscher Algorithmus.\\
+(b) $b^*_1(x) = \begin{pmatrix}a&b&c\end{pmatrix}x$. Es gilt: $b^*_1(b_1)=1,b^*_1(b_2)=b^*_1(b_3)=0$. Gleicherma\ss{}en mit $b^*_2$ und $b^*_3$.\\ Der Ansatz f\"uhrt auf 3 LGS; l\"osen ergibt: $b^*_1(x) = \begin{pmatrix}0&2&1\end{pmatrix}x$, $b^*_2(x) = \begin{pmatrix}2&0&1\end{pmatrix}x$ und $b^*_3(x) = \begin{pmatrix}2&2&0\end{pmatrix}x$.\\
+(c) Stelle x als Linearkomb. der Basisvektoren dar $\Rightarrow x=2b_1+2b_2+2b_3$.\\
+Daraus folgt $\varphi = 2b^*_1+2b^*_2+2b^*_3 \Rightarrow \varphi(y)=\begin{pmatrix}2&2&1\end{pmatrix}y \Rightarrow \varphi(x)=0$.
+\end{document}

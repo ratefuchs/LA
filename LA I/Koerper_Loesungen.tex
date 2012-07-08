@@ -1,0 +1,27 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\section*{Aufgabe 1}
+Addition: $(\mathbb{C}, +)$ abelsche Gruppe, $V \subset \mathbb{C}, 0 \in V, (a+bi)-(c+di)=(a-c)+(b-d)i \in V,$ da $a-c, b-d \in \mathbb{Q}$. Nach UGK ist $(V,+)$ eine Gruppe. \\ Ebenso mit $(\mathbb{C}\setminus\{0\}, \cdot)$ und $(V\setminus\{0\}, \cdot)$:
+Für $(c+di) \neq 0$ ist $(c+di)^{-1} = \frac{c-di}{c^2+d^2} \Rightarrow$ Für $(a+bi), (c+di) \in V\setminus\{0\}$:\\
+$\frac{a+bi}{c+di} = (a+bi)\cdot\frac{c-di}{c^2+d^2} = \frac{ac+bd}{c^2+d^2}+\frac{bc-ad}{c^2+d^2}\cdot i \in V,$ da $\frac{ac+bd}{c^2+d^2}, \frac{bc-ad}{c^2+d^2} \in V; \frac{a+bi}{c+di} \neq 0$ wegen $(a+bi) \neq 0$. Nach UGK ist $(V\setminus\{0\},\cdot)$ eine Gruppe und abelsch, da Untergruppe von $\mathbb{C}$.
+
+\section*{Aufgabe 2}
+
+Zuerst wird bewiesen: $F_4, F_9$ sind abelsche Ringe mit eins.\\
+Addition: Stichwort Vektorraum!\\
+Multiplikation: Abgeschlossenheit folgt aus Definition $($nur Rechnungen in $F_2$ bzw. $F_3$). Kommutativität und Assoziativität:\\ Nachrechnen oder (sauberes!) Argumentieren mit Komm. und Assoz. in $\mathbb{C}$ $($wobei $(1,0)^T \mathrel{\widehat{=}} 1; (0,1)^T \mathrel{\widehat{=}} i))$.\\ Neutrales Element: $(1,0)^T$ $($geht leicht wenn man vorher mit $\mathbb{C}$ argumentiert, sonst: nachrechnen!$)$. Distributivgesetze: nachrechnen oder $\mathbb{C}. \Rightarrow $ (c)\\
+(Ab hier sind alle Vektoren transponiert geschrieben)\\
+(b): $(1,1)\circ (1,1) = (1-1,1+1) = (0,2) = (0,0)$ in $F_2 \Rightarrow F_4$ nicht nullteilerfrei $\Rightarrow$ kein Körper\\
+(a): es fehlt noch die Existenz der inversen Elemente in $F_9\setminus\{(0,0)\}$:\\
+$(1,0) \circ (1,0) = (2,0) \circ (2,0) = (1,0)\\
+(0,1) \circ (0,2) = (-2,0) = (1,0)\\
+(1,1) \circ (2,1) = (2-1,2+1) = (1,0)\\
+(1,2) \circ (2,2) = (2-4,4+2) = (1,0)$
+
+\end{document}

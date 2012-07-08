@@ -1,0 +1,27 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\section*{Aufgabe 1}
+Sei $V=\mathbb{R}^3, \beta_a(x,y)=x^T\cdot A_a\cdot y (x,y \in V, a \in \mathbb{R}),
+M=\{a \in \mathbb{R} | \beta_a$ ist Skalarprodukt$\}$ und 
+$A_a=\begin{pmatrix}2&1&0\\1&3&0\\0&0&a^2\end{pmatrix}$.\\
+(a)	Bestimme M.\\
+(b)	Wähle für jedes $a \in \mathbb{R} \setminus M$ ein $x \in V \setminus \{0\}$ so, dass $\beta_a(x,x)\leq0$ ist.
+
+\section*{Aufgabe 2}
+Sei $S\in\mathbb{R}^{n\times n}_{reg}$ und $<,>$ mit $<x,y>:=x^TSy(x,y\in\mathbb{R}^n)$ ein Skalarprodukt.\\
+Zeige: $\beta$ mit $\beta(x,y)=x^TS^{-1}y$ ist ebenfalls ein Skalarprodukt.
+
+\section*{Aufgabe 3}
+F\"ur eine reelle $(n\times n)$-Matrix $(n\geq2)$ A mit
+$A=((a_{i,j}))_{i,j\in\{1,\dots,n\}}$ gelte\\
+$\det A_1 > 0, \det A_2 > 0,\dots,\det A_{n-1} > 0$, wobei $A_k:=((a_{i,j}))_{i,j\in\{1,\dots,k\}}$.\\
+Zeige:(a)$a_{nn}\leq0\Rightarrow\det A\leq0$.\\
+(b)Die Aussage $\det A\leq0\Rightarrow a_{nn}\leq0$ ist falsch.\\
+(c)Untersuche f\"ur n=1.
+\end{document}

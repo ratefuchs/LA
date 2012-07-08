@@ -1,0 +1,32 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\section*{Aufgabe 1}
+(a)	$A_a$ ist symmetrisch. Hurwitzkriterium: $\det (2) = 2 > 0$, $\begin{vmatrix}2&1\\1&3\end{vmatrix}=5 > 0,$ und
+$\begin{vmatrix}2&1^0\\1&3&0\\0&0&a^2\end{vmatrix}=a^2\cdot \begin{vmatrix}2&1\\1&3\end{vmatrix}=5a^2$.
+Für $a\neq0$ ist $5a^2 > 0$, für $a=0$ ist $5a^2 = 0$. Nach Hurwitz ist damit $M= \mathbb{R} \setminus \{0\}$.\\
+(b)	$\mathbb{R} \setminus M = \mathbb{R} \setminus (\mathbb{R} \setminus \{0\}) = \{0\}$.\\
+Untersuchung also für $a=0$: Wähle z.B. $x=(0,0,1)^T$, da x im Kern von $A_0$ liegt.\\
+Also ist $\beta_0(x,x)=x^T\cdot A_0\cdot x=x^T\cdot 0=0\leq0.$
+
+\section*{Aufgabe 2}
+$<,>$ ist Skalarprodukt, also ist S symmetrisch und positiv definit.\\
+Symmetrie: $S^{-1}=(S^T)^{-1}=(S^{-1})^T$.\\
+pos. def: z.z. $x^TS^{-1}x>0(x\neq0)$.\\
+S regul\"ar $\Rightarrow (x\mapsto Sx)$ ist bijektiv
+$\Rightarrow\exists y\in\mathbb{R}^n:x=Sy$. Aus y=0 w\"urde x=0 folgen (Widerspruch).\\
+Also ist $y\neq0$.
+$\Rightarrow x^TS^{-1}x=(Sy)^TS^{-1}(Sy)=y^T\underbrace{S^T}_{=S}\underbrace{S^{-1}S}_{=E_n}y=y^TSy>0$,
+ da S positiv definit und $y\neq0$.
+ 
+\section*{Aufgabe 3}
+(a)Beweis durch Widerspruch: Sei $a_{nn}\leq0$, aber det A > 0. Nach Hurwitz gilt dann: A ist positiv definit.\\
+W\"ahle $x=(0,0,\dots,0,1)^T\in\mathbb{R}\setminus\{0\}.\\x^TAx=a_{nn}\leq0.$ WIDERSPRUCH zur positiven Definitheit von A!\\
+(b)$A=\begin{pmatrix}1&2\\2&1\end{pmatrix}$. $\det A_1=1>0, \det A = -3<0$, aber $a_{22}=1>0$.\\
+(c)$\det A = a_{11}\Rightarrow\big(\det A\leq0\Leftrightarrow a_{11}\leq0\big)$.
+\end{document}

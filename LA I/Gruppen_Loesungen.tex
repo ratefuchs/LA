@@ -1,0 +1,26 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+
+\begin{document}
+\section*{Aufgabe 1}
+(a) Nein, z.B. $n=2, A=\begin{pmatrix} 2 & 2 \\ 2 & 4 \end{pmatrix}, B=\begin{pmatrix} 1 & 1 \\ 1 & 5 \end{pmatrix},
+A\cdot B$ ist nicht in S.\\
+(b) nein $(E_n, -E_n \in S$; $E_n-E_n=0$; Die Nullmatrix ist aber nicht regulär).\\
+(c) $E_n \in S'$.\\ Überprüfe das Untergruppenkriterium. Seien also $A, B \in S^\prime$.\\
+	$(A\cdot B^{-1})^T$		| Kommutativität\\
+	$=(B^{-1}\cdot A)^T$		| Regeln beim Transponieren\\
+	$=A^T\cdot (B^{-1})^T$		| A,B symmetrisch\\
+	$=A\cdot B^{-1} \Rightarrow$ Behauptung (Mithilfe des UGK)
+
+\section*{Aufgabe 2}
+
+$\Rightarrow$: Falls H Normalteiler ist, ist H auch Untergruppe $\rightarrow$ trivial\\
+$\Leftarrow$: H ist nicht leer und (ii) $\Rightarrow$ H ist UG von G. Zeige mit (i), dass G abelsch ist:
+$y\circ x=y\circ x\circ e=y\circ x\circ (x\circ y)^{-1}\circ x\circ y	$ |(i) \\
+$=y\circ x\circ x^{-1}\circ y^{-1}\circ x\circ y=y\circ y^{-1}\circ x\circ y=x\circ y$.
+Dann ist jede UG Normalteiler von G $\Rightarrow$ Beh.
+
+\end{document}
